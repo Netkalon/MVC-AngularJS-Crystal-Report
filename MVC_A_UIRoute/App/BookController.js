@@ -16,6 +16,7 @@ uiroute.controller('BookController', function ($scope, BookService, $window, $ht
     $scope.loadTable();
 
     $scope.LoadById = function (model)
+
     {
         $scope.Ed = model;
         $scope.Datamode = 'Update';
