@@ -1,0 +1,191 @@
+    
+
+<div class="container-fluid">
+  
+
+    <!--<div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-primary">
+
+                <div class="panel-heading" ng-click="divContents()">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <em class="fa fa-sort fa-fw"></em><b> CONTENTS</b>
+                        </div>
+                        <div class="col-md-2">
+                            <span class="mr">
+                                <button type="button" class="btn bg-pink  bg-light btn-xs mr-sm cusbtnwidth"
+                                        ng-click="AddNewRecord()"
+                                        ng-disabled="btnNew"
+                                        title="Add New">
+                                    <span>
+                                        <em class="fa fa-plus-square fa-fw"></em>
+                                    </span>New
+                                </button>
+
+                            </span>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="page-body" ng-show="DivSearchResult">
+                    <div class="panel-body" ng-show="DivSearchResult">
+                        <div class="table-responsive table-bordered success">
+                            <table datatable="ng" class="row-border hover ">
+
+                                <thead class="label-default">
+                                    <tr>
+                                        <td class="ctdCenter text-nowrap">
+                                            SELECT
+                                        </td>
+                                        <td class="ctdCenter text-nowrap">
+                                            CODE
+                                        </td>
+                                        <td class="ctdCenter text-nowrap">
+                                            NAME
+                                        </td>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr ng-repeat="model in Datas">
+                                        <td style="text-align:center;">
+                                            <button type="button" class="btn bg-info  btn-xs mr-sm" ng-click="AgGetDataByIdCtrl(model)" title="View">
+                                                <em class="fa fa-edit fa-fw"></em>
+                                            </button>
+                                        </td>
+                                        <td class="cBodytdCenter text-nowrap">{{ model.Code }}</td>
+                                        <td class="text-nowrap">{{ model.Name }}</td>
+                                    </tr>
+                                </tbody>
+
+                                <tfoot class="label-default">
+                                    <tr>
+                                        <td class="ctdCenter text-nowrap">
+                                            SELECT
+                                        </td>
+                                        <td class="ctdCenter text-nowrap">
+                                            CODE
+                                        </td>
+                                        <td class="ctdCenter text-nowrap">
+                                            NAME
+                                        </td>
+                                    </tr>
+                                </tfoot>
+
+
+                            </table>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+      <div class="row">
+
+            <div class="col-md-12">
+                <form name="formv" class="form-validate form-horizontal">
+                    <div class="panel panel-primary">
+
+                        <div class="panel-heading">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <em class="fa fa-align-justify fa-fw"></em><b> DETAILS</b>
+                                </div>
+                                <div class="col-md-4">
+                                    <span class="mr">
+                                        <button type="submit" class="btn btn-success bg-dark  btn-xs mr-sm cusbtnwidth"
+                                                ng-click="AgSaveCtrl(model)"
+                                                ng-disabled="btnSave"
+                                                tabindex="3"
+                                                title="Save">
+                                            <span>
+                                                <i class="fa fa-save fa-fw"></i>
+                                            </span>Save
+                                        </button>
+                                        <button type="button" class="btn btn-danger bg-dark btn-xs mr-sm cusbtnwidth"
+                                                ng-click="AgDeleteCtrl(model)"
+                                                ng-disabled="btnDelete"
+                                                tabindex="4"
+                                                title="Delete">
+                                            <span>
+                                                <i class="fa fa-trash-o fa-fw"></i>
+                                            </span>Delete
+                                        </button>
+                                        <button type="button" class="btn btn-warning bg-dark btn-xs cusbtnwidth"
+                                                ng-click="ClearBtn()"
+                                                tabindex="5"
+                                                ng-disabled="btnClear"
+                                                title="Reset">
+                                            <span>
+                                                <i class="fa fa-eraser fa-fw"></i>
+                                            </span>Clear
+                                        </button>
+                                    </span>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="panel-body">
+
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="input-id-1" class="col-sm-2 control-label">Code</label>
+                                    <span class="text-warning col-sm-offset-0" style="font-size:larger">*</span>
+
+                                    <div class="col-sm-1">
+                                        <input id="input-id-1"
+                                               required
+                                               type="text"
+                                               class="form-control"
+                                               ng-model="Code"
+                                               ng-readonly="CodeReadeOnly"
+                                               ng-focus="CodeFocus()"
+                                               ng-blur="AgGetDataByIdLostFcs(Code)"
+                                               tabindex="1"
+                                               numbers-Only-5
+                                               maxlength="10" />
+                                    </div>
+                                    <span class="text-info">{{focusErrorCode}}</span>
+
+                                </div>
+                            </fieldset>
+
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="input-id-1" class="col-sm-2 control-label">Name</label>
+                                    <span class="text-warning col-sm-offset-1" style="font-size:larger">*</span>
+                                    <div class="col-sm-4">
+                                        <input id="input-id-1"
+                                               required
+                                               maxlength="50"
+                                               type="text"
+                                               class="form-control"
+                                               ng-model="Name"
+                                               tabindex="2"
+                                               ng-focus="NameFocus()" />
+                                    </div>
+                                    <span class="text-info">{{focusErrorName}}</span>
+                                </div>
+                            </fieldset>
+
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </div>-->
+
+
+</div>

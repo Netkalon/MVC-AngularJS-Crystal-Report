@@ -1,0 +1,80 @@
+<div class="jumbotron text-center">
+    <h1>AngularJS Report Export</h1>
+    <!--<a ui-sref=".template" class="btn btn-primary">Nested State</a>
+    <a ui-sref=".list" class="btn btn-primary"> Nested State with Ctrl </a>
+    <a class="btn btn-primary" ui-sref="multipleview">Multiple View</a>-->  
+    <button class="btn btn-success " ng-click="ExcelReport()">Excel Report</button>
+    <button class="btn btn-danger " ng-click="PdfReport()">Pdf Report</button>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table datatable="ng" class="table-responsive table-bordered table-striped ">
+
+            <thead style="background-color:#428bca;color:white" >
+                <tr>
+                    <td >
+                        Book Code
+                    </td>
+                    <td >
+                        Book Name
+                    </td>
+                    <td >
+                        Book Description
+                    </td>
+                    <td>
+                        Book Author Name
+                    </td>
+                    <!--<td>
+                        <span class="glyphicon glyphicon-edit"></span>
+                    </td>
+                    <td>
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </td>-->
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="model in LoadData">
+                    
+                    <td >{{ model.BookCode }}</td>
+                    <td >{{ model.BookName }}</td>
+                    <td>{{ model.BookDesc }}</td>
+                    <td>{{ model.BookAuthor }}</td>
+                    <!--<td><span class="glyphicon glyphicon-edit" ng-click="LoadById(model)"></span></td>
+                    <td><span class="glyphicon glyphicon-trash" ng-click="DaleteById(model)"></span></td>-->
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+    <!--<div class="col-md-4">
+       
+            <div class="form-group">
+                <label for="input-id-1" class="control-label">Book Code</label>
+                <input type="text" class="form-control" ng-model="Ed.BookCode" ng-disabled="Enable"/>
+            </div>
+                <div class="form-group">
+                    <label for="input-id-1" class=" control-label">Book Name</label>
+                    <input type="text" class="form-control" ng-model="Ed.BookName" />
+                </div>
+                    <div class="form-group">
+                        <label for="input-id-1" class=" control-label">Book Desc</label>
+                        <input type="text" class="form-control" ng-model="Ed.BookDesc" />
+                    </div>
+                        <div class="form-group">
+                            <label for="input-id-1" class=" control-label">Book Author</label>
+                            <input type="text" class="form-control" ng-model="Ed.BookAuthor" />
+                         </div>
+       
+            <button class="btn btn-primary col-md-4" ng-click="Save()">Save</button>
+            <button class="btn btn-primary col-md-4" ng-click="Clear()">Clear</button>
+            <span class="alert-info">{{message}}</span>
+        </div>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+
